@@ -1,0 +1,14 @@
+{% load i18n %}
+{% get_available_languages as LANGUAGES %}
+
+<form class="navbar-form navbar-right" action="/i18n/setlang/" method="post">
+    {% csrf_token %}
+	{% get_current_language as current_lang %}
+	{{ current_lang }}
+    <select name="language">
+       {% for lang in LANGUAGES %}
+          <option value="{{ lang.0 }}">{{ lang.1 }}</option>
+       {% endfor %}
+	   <input type="submit" value="{% trans "Mudar idioma" %}" />
+    </select>
+</form>
