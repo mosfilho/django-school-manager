@@ -1,1 +1,0 @@
-This is my first application in django utilyzing GitHub.
