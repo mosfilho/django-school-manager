@@ -111,12 +111,13 @@ MIDDLEWARE_CLASSES = (
 	'django.middleware.locale.LocaleMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 )
 
-ROOT_URLCONF = 'django-school-manager.urls'
+ROOT_URLCONF = 'school-manager.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'django-school-manager.wsgi.application'
+WSGI_APPLICATION = 'school-manager.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -137,9 +138,11 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-    'easy_thumbnails',
+    'django.contrib.flatpages',
+    'menu',
     'filer',
-    'fullcalendar',
+    'easy_thumbnails',
+    'portal',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'

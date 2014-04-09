@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'dombosco.views.home', name='home'),
+    url(r'^$', 'school-manager.views.home', name='home'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
@@ -14,7 +14,7 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 	(r'^i18n/', include('django.conf.urls.i18n')),
-	url(r'^all_events/', 'django-school-manager.views.all_events', name='all_events'),
+	url(r'^all_events/', 'school-manager.views.all_events', name='all_events'),
 )
 
 from django.conf import settings
