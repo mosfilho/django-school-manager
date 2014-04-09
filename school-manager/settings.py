@@ -143,6 +143,7 @@ INSTALLED_APPS = (
     'filer',
     'easy_thumbnails',
     'portal',
+    'fullcalendar',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
