@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Django settings for school-manager project.
+# Django settings for gerenciador project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -114,10 +114,10 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 )
 
-ROOT_URLCONF = 'school-manager.urls'
+ROOT_URLCONF = 'gerenciador.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'school-manager.wsgi.application'
+WSGI_APPLICATION = 'gerenciador.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
