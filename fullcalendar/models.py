@@ -24,7 +24,7 @@ class CalendarEvent(models.Model):
     :param all_day: Define event for all day
     :type all_day: bool.
     """
-    title = models.CharField(_('Title'), blank=True, max_length=200)
+    title = models.CharField(_('Title'), max_length=200)
     start = models.DateTimeField(_('Start'))
     end = models.DateTimeField(_('End'))
     all_day = models.BooleanField(_('All day'), default=False)

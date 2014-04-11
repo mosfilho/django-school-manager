@@ -143,6 +143,7 @@ INSTALLED_APPS = (
     'filer',
     'easy_thumbnails',
     'portal',
+    'meta_dados',
     'fullcalendar',
 )
 
