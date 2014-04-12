@@ -13,8 +13,10 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-	(r'^i18n/', include('django.conf.urls.i18n')),
-	url(r'^all_events/', 'gerenciador.views.all_events', name='all_events'),
+    (r'^i18n/', include('django.conf.urls.i18n')),
+    url(r'^all_events/', 'gerenciador.views.all_events', name='all_events'),
+
+    url(r'^portal/', include('portal.urls')),
 )
 
 from django.conf import settings
